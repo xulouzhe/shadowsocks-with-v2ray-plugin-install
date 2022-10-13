@@ -13,7 +13,7 @@ fi
 
 # Version
 LIBSODIUM_VER=stable
-MBEDTLS_VER=2.16.5
+MBEDTLS_VER=2.16.12
 ss_file=0
 v2_file=0
 get_latest_ver(){
@@ -83,7 +83,7 @@ install_mbedtls(){
         echo "\033[1;32mMbedTLS already installed, skip.\033[0m"
     else
         if [ ! -f mbedtls-$MBEDTLS_VER-gpl.tgz ];then
-            wget https://tls.mbed.org/download/mbedtls-$MBEDTLS_VER-gpl.tgz
+            wget https://src.fedoraproject.org/repo/pkgs/mbedtls/mbedtls-$MBEDTLS_VER.tar.gz/sha512/8d96d8cd906cc0999134320e4e1f550631426d166eab5da6e65469ee7286093810fcc6ac4bd5500ee55972d159f8bef7f9e53245f7f0eec72f72c35265b4313b/mbedtls-$MBEDTLS_VER.tar.gz
         fi
         tar xf mbedtls-$MBEDTLS_VER-gpl.tgz
         cd mbedtls-$MBEDTLS_VER
