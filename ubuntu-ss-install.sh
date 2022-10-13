@@ -85,7 +85,7 @@ install_mbedtls(){
         if [ ! -f mbedtls-$MBEDTLS_VER-gpl.tgz ];then
             wget https://src.fedoraproject.org/repo/pkgs/mbedtls/mbedtls-$MBEDTLS_VER.tar.gz/sha512/8d96d8cd906cc0999134320e4e1f550631426d166eab5da6e65469ee7286093810fcc6ac4bd5500ee55972d159f8bef7f9e53245f7f0eec72f72c35265b4313b/mbedtls-$MBEDTLS_VER.tar.gz
         fi
-        tar xf mbedtls-$MBEDTLS_VER-gpl.tgz
+        tar xf mbedtls-$MBEDTLS_VER.tar.gz
         cd mbedtls-$MBEDTLS_VER
         make SHARED=1 CFLAGS=-fPIC
         make DESTDIR=/usr install
