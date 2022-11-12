@@ -15,12 +15,12 @@ Point your domain to the IP address with A record.
 ```bash
 # Installation
 ## CentOS 7/8
-wget -O centos-ss-install.sh https://github.com/M3chD09/shadowsocks-with-v2ray-plugin-install/raw/master/centos-ss-install.sh
+wget -O centos-ss-install.sh https://github.com/xulouzhe/shadowsocks-with-v2ray-plugin-install/raw/master/centos-ss-install.sh
 chmod +x centos-ss-install.sh
 ./centos-ss-install.sh
 
 ## Ubuntu 18.04/16.04 or Debian 9/10
-wget -O ubuntu-ss-install.sh https://github.com/M3chD09/shadowsocks-with-v2ray-plugin-install/raw/master/ubuntu-ss-install.sh
+wget -O ubuntu-ss-install.sh https://github.com/xulouzhe/shadowsocks-with-v2ray-plugin-install/raw/master/ubuntu-ss-install.sh
 chmod +x ubuntu-ss-install.sh
 ./ubuntu-ss-install.sh
 
